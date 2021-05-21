@@ -340,6 +340,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayTanzanite \
     FrameworksResOverlayTanzanite \
     SettingsResOverlayTanzanite \
+    SettingsProviderResOverlayTanzanite \
     SystemUIOverlayTanzanite \
     TetheringResOverlayTanzanite \
     WifiResOverlayTanzanite
