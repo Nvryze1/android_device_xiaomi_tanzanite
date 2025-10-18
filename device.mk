@@ -122,6 +122,9 @@ PRODUCT_PACKAGES += \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml
 
+PRODUCT_PACKAGES += \
+    MinRefreshRateCtrl
+
 # Dolby
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 PRODUCT_PACKAGES += \
