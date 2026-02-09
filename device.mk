@@ -87,8 +87,7 @@ PRODUCT_PACKAGES += \
     libdynproc
 
 PRODUCT_PACKAGES += \
-    MtkInCallService \
-    XiaomiDolby
+    MtkInCallService
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
@@ -117,6 +116,11 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml
+
+# Dolby
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
+PRODUCT_PACKAGES += \
+    LunarisDolby
 
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \

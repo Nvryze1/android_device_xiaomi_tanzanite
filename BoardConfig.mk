@@ -164,10 +164,9 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
 VENDOR_SECURITY_PATCH := 2025-03-01
 
 # VINTF
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
