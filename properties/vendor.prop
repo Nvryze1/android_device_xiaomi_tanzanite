@@ -253,6 +253,7 @@ persist.sys.perf.scroll_opt=true
 persist.sys.perf.scroll_opt.heavy_app=1
 
 # Surfaceflinger
+ro.surface_flinger.game_default_frame_rate_override=120
 debug.sf.auto_latch_unsignaled=1
 debug.sf.disable_backpressure=1
 debug.sf.defer_refresh_rate_when_off=1
