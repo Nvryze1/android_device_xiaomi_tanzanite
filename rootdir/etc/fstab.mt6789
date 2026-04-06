@@ -33,6 +33,8 @@ vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount,
 
 /devices/platform/soc/mt_usb* auto vfat defaults voldmanaged=usbotg:auto
 
+/dev/block/mmcblk0p1                                    /sdcard                 vfat     nosuid,nodev wait,recoveryonly
+
 /dev/block/by-name/frp /persistent emmc defaults defaults
 
 /dev/block/by-name/nvram /nvram emmc defaults defaults
