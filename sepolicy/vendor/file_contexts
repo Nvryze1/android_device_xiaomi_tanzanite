@@ -59,6 +59,9 @@
 # Keymint
 /(vendor|system/vendor)/bin/hw/android.hardware.security.keymint@1.0-service.mitee                     u:object_r:hal_keymint_default_exec:s0
 
+# mmc device type
+/sys/devices/platform/soc/11240000.mmc/mmc_host/mmc0/mmc0:[a-f0-9]+/type               u:object_r:vendor_sysfs_mmc_device_type:s0
+
 # NFC
 /dev/nxp-nci                                                                                            u:object_r:nfc_device:s0
 
