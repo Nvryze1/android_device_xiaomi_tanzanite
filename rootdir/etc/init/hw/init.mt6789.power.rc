@@ -84,6 +84,9 @@ on init
     write /dev/cpuctl/rt/cpu.uclamp.min 0
     write /dev/cpuctl/rt/cpu.shares 20480
 
+    # Disable multiple kswapd threads
+    write /proc/sys/vm/kswapd_threads 1
+
     # Background tasks for best efficiency
     write /dev/cpuctl/background/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive 0
