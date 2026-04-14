@@ -66,7 +66,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 # Kill lineage kernel build task while preserving kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 
-# Workaround to make lineage's soong generator work
+# Workaround to make navy's soong generator work
 TARGET_KERNEL_SOURCE := device/xiaomi/tanzanite-kernel/kernel-headers
 
 LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz
@@ -115,7 +115,7 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := $(TARGET_RO_FILE_SYSTEM_TYPE)
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/navy/config/BoardConfigReservedSize.mk
 
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_PRODUCT := product
